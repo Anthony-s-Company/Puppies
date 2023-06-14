@@ -4,18 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <title>PuppyBowl</title>
 </head>
 <body>
+  <h1 id="title">Puppy Roster</h1>
+  <button id="newPlayerBtn" class="btn btn-success btn-round-2">Crear Party</button>
+
   <!-- form to add new players -->
   <div id="new-player-form"></div>
 
   <!-- container for all players -->
-  <div id="all-players-container"></div>
+  <div class="row" id="players-container"></div>
+  <div class="row" id="player-detail-container"></div>
 
   <!-- import JavaScript -->
-  <script src="./script.js"></script>
+  <script type="module" src="./playerRender.js"></script>
+  <script type="module" src="./playerCrud.js"></script>
 </body>
 </html>
